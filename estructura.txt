@@ -1,0 +1,44 @@
+/punto_venta/
+│
+├── /app/                       # Carpeta principal de la aplicación Flask
+│   ├── __init__.py             # Inicialización de la aplicación Flask
+│   ├── models.py               # Definición de modelos (SQLAlchemy)
+│   ├── routes.py               # Definición de rutas (endpoints)
+│   ├── forms.py                # Formularios WTForms
+│   ├── utils.py                # Funciones utilitarias
+│   ├── /templates/             # Plantillas HTML (Jinja2)
+│   │   ├── layout.html         # Layout base (estructura HTML común)
+│   │   ├── index.html          # Página principal
+│   │   ├── venta.html          # Página de ventas
+│   │   ├── productos.html      # Página de productos
+│   │   ├── reportes.html       # Página de reportes
+│   │   └── login.html          # Página de login
+│   ├── /static/                # Archivos estáticos (CSS, JS, imágenes)
+│   │   ├── /css/
+│   │   │   ├── main.css        # Estilos personalizados
+│   │   ├── /js/
+│   │   │   ├── main.js         # Scripts de JavaScript personalizados
+│   │   ├── /img/
+│   │   │   └── logo.png        # Logo del sistema de punto de venta
+│   └── /blueprints/            # Submódulos o Blueprints (para escalar)
+│       ├── __init__.py         # Inicialización de los Blueprints
+│       ├── ventas.py           # Módulo de ventas
+│       ├── productos.py        # Módulo de productos
+│       └── reportes.py         # Módulo de reportes
+│
+├── /config/                    # Configuración de la aplicación
+│   ├── config.py               # Configuración principal (base, dev, prod)
+│   └── .env                    # Variables de entorno (configuración sensible)
+│
+├── /migrations/                # Archivos de migración de base de datos (Flask-Migrate)
+│
+├── /tests/                     # Pruebas unitarias y de integración
+│   ├── test_routes.py          # Pruebas de rutas (endpoints)
+│   ├── test_models.py          # Pruebas de modelos
+│   └── test_integration.py     # Pruebas de integración
+│
+├── venv/                       # Entorno virtual de Python
+│
+├── run.py                      # Script principal para ejecutar la app
+├── requirements.txt            # Dependencias de la aplicación
+└── README.md                   # Documentación del proyecto
